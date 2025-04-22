@@ -5,17 +5,33 @@
   <title>Biosuisse - Saveur des Alpes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #ffffff;
       color: #2c2c2c;
       line-height: 1.6;
+    }
+
+    /* MENU */
+    nav {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: #d32f2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     header {
@@ -76,6 +92,36 @@
       background-color: #a52727;
     }
 
+    .sponsors {
+      padding: 2rem;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+
+    .sponsors h3 {
+      color: #d32f2f;
+      margin-bottom: 1rem;
+    }
+
+    .sponsors .logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .sponsors .logos img {
+      height: 50px;
+      opacity: 0.8;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .sponsors .logos img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
     footer {
       margin-top: 3rem;
       text-align: center;
@@ -87,6 +133,13 @@
 </head>
 <body>
 
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="association.html">Association</a>
+    <a href="#">Produits</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <header>
     <h1>Biosuisse</h1>
     <p>Saveurs authentiques des Alpes suisses</p>
@@ -97,6 +150,16 @@
     <h2>Le goût de la nature, en pleine altitude</h2>
     <p>Des produits suisses certifiés bio, inspirés par les montagnes, les fermes alpines et la pureté de l’air helvétique. Bienvenue chez Biosuisse.</p>
     <a href="#" class="cta-button">Voir nos produits</a>
+  </section>
+
+  <section class="sponsors">
+    <h3>Nos partenaires & sponsors</h3>
+    <div class="logos">
+      <!-- Remplace ces logos par les tiens -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coop_Logo.svg/2560px-Coop_Logo.svg.png" alt="Coop" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Migros_Logo.svg/2560px-Migros_Logo.svg.png" alt="Migros" />
+      <img src="https://upload.wikimedia.org/wikipedia/fr/5/5f/Logo_Manor.png" alt="Manor" />
+    </div>
   </section>
 
   <footer>
